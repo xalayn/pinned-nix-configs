@@ -354,11 +354,11 @@
         "xalaynix-wrappers": "xalaynix-wrappers"
       },
       "locked": {
-        "lastModified": 1777168316,
-        "narHash": "sha256-hHVXDly2BP+EwWkhDeGqcmZEuBjm0YcfZEfoHBH09g4=",
+        "lastModified": 1777168669,
+        "narHash": "sha256-8t0VC/pAhrd9uFOIRkwlY9ZfnaIsTNye9sPR9kDwFzI=",
         "owner": "alex-kumpula",
         "repo": "home-config",
-        "rev": "90f177ab373b6f2ac8fb90631cf3067670867913",
+        "rev": "4046a052910fe7354e86aa8ea9e7fbedd6a4fdbb",
         "type": "github"
       },
       "original": {
@@ -599,6 +599,22 @@
     },
     "nixpkgs_4": {
       "locked": {
+        "lastModified": 1768940263,
+        "narHash": "sha256-sJERJIYTKPFXkoz/gBaBtRKke82h4DkX3BBSsKbfbvI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "3ceaaa8bc963ced4d830e06ea2d0863b6490ff03",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-25.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_5": {
+      "locked": {
         "lastModified": 1767313136,
         "narHash": "sha256-16KkgfdYqjaeRGBaYsNrhPRRENs0qzkQVUooNHtoy2w=",
         "owner": "nixos",
@@ -720,7 +736,7 @@
       "inputs": {
         "home": "home",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs_4",
+        "nixpkgs": "nixpkgs_5",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "system": "system"
       }
@@ -866,10 +882,7 @@
         "flake-parts": "flake-parts_3",
         "import-tree": "import-tree",
         "niri": "niri_2",
-        "nixpkgs": [
-          "home",
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs_4",
         "nixpkgs-lib": [
           "home",
           "xalaynix-wrappers",
