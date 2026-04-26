@@ -303,11 +303,11 @@
         "xalaynix-wrappers": "xalaynix-wrappers"
       },
       "locked": {
-        "lastModified": 1777167305,
-        "narHash": "sha256-bHWHsHrK+pDq4Xme9kGAEjm38OX5bciyro8G83hu9nY=",
+        "lastModified": 1777167409,
+        "narHash": "sha256-uujvTL3xhe1snm+JLChxnAj0miuPwUN2aRd04fI4j20=",
         "owner": "alex-kumpula",
         "repo": "home-config",
-        "rev": "b058020d4eba734f7b23c8988cf8e2c5c560b0aa",
+        "rev": "8c8dfd4de6a4d6248a1b919f349f9666165bc602",
         "type": "github"
       },
       "original": {
