@@ -354,11 +354,11 @@
         "xalaynix-wrappers": "xalaynix-wrappers"
       },
       "locked": {
-        "lastModified": 1777624847,
-        "narHash": "sha256-0rAM8nJBYB4diU5vRiDzi8KoVPFQlRHQ9+PEDaBVv4E=",
+        "lastModified": 1777716669,
+        "narHash": "sha256-npHKx8/pC6DTbFGg9wuARqr4QZWVaQp4SVe2E3Oe39g=",
         "owner": "alex-kumpula",
         "repo": "home-config",
-        "rev": "8f3edd6ba2c6247e6898cffd558fff872379a31e",
+        "rev": "6298f71d5f9ae75fb43aef8180438cc0cf5d9497",
         "type": "github"
       },
       "original": {
@@ -535,11 +535,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1777268161,
-        "narHash": "sha256-bxrdOn8SCOv8tN4JbTF/TXq7kjo9ag4M+C8yzzIRYbE=",
+        "lastModified": 1777578337,
+        "narHash": "sha256-Ad49moKWeXtKBJNy2ebiTQUEgdLyvGmTeykAQ9xM+Z4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+        "rev": "15f4ee454b1dce334612fa6843b3e05cf546efab",
         "type": "github"
       },
       "original": {
