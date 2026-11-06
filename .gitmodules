@@ -1,0 +1,6 @@
+[submodule "system-config"]
+	path = system-config
+	url = https://github.com/alex-kumpula/system-config
+[submodule "home-config"]
+	path = home-config
+	url = https://github.com/alex-kumpula/home-config
