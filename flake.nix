@@ -11,7 +11,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     # Pinned via git submodules: the commit each submodule points at is what gets built.
-    # Bump with: git submodule update --remote && git commit -am "Bump configs"
+    # After editing them, run `just sync` (see justfile).
     system.url = "path:./system-config";
     home.url = "path:./home-config";
 
@@ -22,8 +22,19 @@
     home.inputs.home-manager.follows = "home-manager";
   };
 
-  outputs = { self, nixpkgs, system, home, ... }: {
+  outputs = { self, nixpkgs, home-manager, system, home, ... }: let
+    pkgs = nixpkgs.legacyPackages.x86_64-linux;
+  in {
     nixosConfigurations = system.nixosConfigurations;
     homeConfigurations = home.homeConfigurations;
+
+    # `nix develop` gives the tools the justfile needs
+    devShells.x86_64-linux.default = pkgs.mkShell {
+      packages = [
+        pkgs.just
+        pkgs.git
+        home-manager.packages.x86_64-linux.home-manager
+      ];
+    };
   };
 }

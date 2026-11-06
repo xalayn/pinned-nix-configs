@@ -25,8 +25,12 @@ nix-shell -p home-manager --command "home-manager switch --flake .#your-home-nam
 
 `system-config` and `home-config` are git submodules; the commit each one points at is what gets built.
 
-To bump both to the latest `main`:
+Edit them in place here (`ned` opens this repo), then from this directory:
 
-git submodule update --remote
-git add system-config home-config
-git commit -m "Bump configs"
+nix develop        # provides just, git and home-manager
+just sync          # rebuild, then commit + push the configs and this repo
+just sync "msg"    # same, with a custom commit message
+just upgrade       # also update nixpkgs etc. (nix flake update) first
+just pull          # pull config changes made on another machine
+
+Run `just` to see every recipe.
