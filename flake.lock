@@ -345,6 +345,9 @@
         "nixpkgs": [
           "nixpkgs"
         ],
+        "nixpkgs-hyprland": [
+          "nixpkgs-hyprland"
+        ],
         "nixpkgs-unstable": [
           "nixpkgs-unstable"
         ],
@@ -573,6 +576,22 @@
         "owner": "NixOS",
         "ref": "nixos-25.11",
         "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-hyprland": {
+      "locked": {
+        "lastModified": 1792886117,
+        "narHash": "sha256-OfxJaGpi1HlknyiIDTyFw7OX4LbRg/eT0TTJPYkDLHM=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "e7fe03cce61eebcf570cd294f70cefe3ad76feed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "e7fe03cce61eebcf570cd294f70cefe3ad76feed",
         "type": "github"
       }
     },
@@ -947,6 +966,7 @@
         "home": "home",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2",
+        "nixpkgs-hyprland": "nixpkgs-hyprland",
         "nixpkgs-unstable": "nixpkgs-unstable_2",
         "system": "system"
       }
@@ -958,6 +978,9 @@
         "nix-parcels": "nix-parcels",
         "nixpkgs": [
           "nixpkgs"
+        ],
+        "nixpkgs-hyprland": [
+          "nixpkgs-hyprland"
         ],
         "nixpkgs-unstable": [
           "nixpkgs-unstable"

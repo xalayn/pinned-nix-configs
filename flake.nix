@@ -7,6 +7,8 @@
 
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    # Pinned nixpkgs used only for Hyprland + the Phantomat plugin (see system-config/flake.nix)
+    nixpkgs-hyprland.url = "github:nixos/nixpkgs/e7fe03cce61eebcf570cd294f70cefe3ad76feed";
     home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
@@ -17,8 +19,10 @@
 
     system.inputs.nixpkgs.follows = "nixpkgs";
     system.inputs.nixpkgs-unstable.follows = "nixpkgs-unstable";
+    system.inputs.nixpkgs-hyprland.follows = "nixpkgs-hyprland";
     home.inputs.nixpkgs.follows = "nixpkgs";
     home.inputs.nixpkgs-unstable.follows = "nixpkgs-unstable";
+    home.inputs.nixpkgs-hyprland.follows = "nixpkgs-hyprland";
     home.inputs.home-manager.follows = "home-manager";
   };
 
