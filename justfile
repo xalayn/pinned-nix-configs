@@ -5,6 +5,9 @@ set shell := ["bash", "-euo", "pipefail", "-c"]
 host := "alex-laptop"
 home := "alex"
 configs := "system-config home-config"
+# Explicit URL so uncommitted edits inside the submodules are always built
+# (plain `.#` can reuse a stale copy when only submodule contents changed).
+flake := "git+file://" + justfile_directory() + "?submodules=1"
 
 # List recipes
 default:
@@ -21,11 +24,11 @@ switch: system home
 
 # Rebuild only the NixOS system configuration
 system:
-    sudo nixos-rebuild switch --flake .#{{ host }}
+    sudo nixos-rebuild switch --flake "{{ flake }}#{{ host }}"
 
 # Rebuild only the Home Manager configuration
 home:
-    home-manager switch --flake .#{{ home }}
+    home-manager switch --flake "{{ flake }}#{{ home }}"
 
 # Update the flake lock (nixpkgs, home-manager, ...)
 update:
