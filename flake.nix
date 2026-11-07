@@ -7,8 +7,8 @@
 
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
-    # Pinned nixpkgs used only for Hyprland + the Phantomat plugin (see system-config/flake.nix)
-    nixpkgs-hyprland.url = "github:nixos/nixpkgs/e7fe03cce61eebcf570cd294f70cefe3ad76feed";
+    # Pinned nixpkgs used only for Hyprland + the ScrollOverview plugin (see system-config/flake.nix)
+    nixpkgs-hyprland.url = "github:nixos/nixpkgs/1d060086d60cb76a40cf37109f979d88a5bd6396";
     home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
